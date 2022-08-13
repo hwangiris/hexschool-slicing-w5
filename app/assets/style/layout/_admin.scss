@@ -1,0 +1,15 @@
+.preview__img {
+  width: 141px;
+  img {
+    object-fit: cover;
+  }
+}
+
+.btn--collapse {
+  span {
+    transition: transform 0.3s;
+    @at-root [aria-expanded*="true"]#{&} {
+      transform: rotate(180deg);
+    }
+  }
+}
