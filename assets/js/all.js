@@ -2,6 +2,11 @@
 
 $(function () {
   var current = window.location.pathname.split('/').pop();
+
+  if (current === '') {
+    current = 'index.html';
+  }
+
   $('nav a').each(function () {
     var href = $(this).attr('href');
 
