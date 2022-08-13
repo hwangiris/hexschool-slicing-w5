@@ -1,7 +1,7 @@
 "use strict";
 
 $(function () {
-  var current = window.location.pathname;
+  var current = window.location.pathname.split('/').pop();
   $('nav a').each(function () {
     var href = $(this).attr('href');
 
